@@ -1,0 +1,206 @@
+2016-02-18 05:31:34 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migration" could not be found.
+Exception Attributes: array (
+  'class' => 'Migration',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migration')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-02-19 05:44:14 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'soundcar.soundcars' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'soundcars', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('soundcars', Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('soundcars')
+#3 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'soundcars', 'Soundcars')
+#7 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Soundcars')
+#8 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Soundcars')
+#9 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('soundcars', 0)
+#10 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('soundcars')
+#12 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-02-19 05:44:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'soundcar.soundcar' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'soundcar', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('soundcar', Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('soundcar')
+#3 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'soundcar', 'Soundcar')
+#7 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Soundcar')
+#8 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Soundcar')
+#9 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('soundcar', 0)
+#10 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('soundcar')
+#12 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-02-19 05:46:34 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'soundcar.soundcar' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'soundcar', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('soundcar', Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('soundcar')
+#3 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'soundcar', 'Soundcar')
+#7 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Soundcar')
+#8 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Soundcar')
+#9 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('soundcar', 0)
+#10 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('soundcar')
+#12 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-02-20 03:58:02 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migratios" could not be found.
+Exception Attributes: array (
+  'class' => 'Migratios',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migratios')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-02-20 04:09:02 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migratios" could not be found.
+Exception Attributes: array (
+  'class' => 'Migratios',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migratios')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-02-20 04:51:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'soundcar.producto' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'producto', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('producto', Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('producto')
+#3 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'producto', 'Producto')
+#7 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Producto')
+#8 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Producto')
+#9 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Producto', 0)
+#10 C:\xampp\htdocs\soundcars\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('Producto')
+#12 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-02-21 05:46:40 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migrate" could not be found.
+Exception Attributes: array (
+  'class' => 'Migrate',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migrate')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-02-22 03:44:50 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serverd" could not be found.
+Exception Attributes: array (
+  'class' => 'Serverd',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('serverd')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-03-02 05:14:05 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migration" could not be found.
+Exception Attributes: array (
+  'class' => 'Migration',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migration')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-03-10 02:19:30 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migration" could not be found.
+Exception Attributes: array (
+  'class' => 'Migration',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migration')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-03-13 04:51:43 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migration" could not be found.
+Exception Attributes: array (
+  'class' => 'Migration',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migration')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-03-13 04:52:08 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migrate" could not be found.
+Exception Attributes: array (
+  'class' => 'Migrate',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('migrate')
+#1 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\soundcars\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\soundcars\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-04-30 01:31:24 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakeManager could not be found.
+Exception Attributes: array (
+  'plugin' => 'CakeManager',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\soundcarsM\config\bootstrap.php(216): Cake\Core\Plugin::load('CakeManager', Array)
+#1 C:\xampp\htdocs\soundcarsM\bin\cake.php(31): include('C:\\xampp\\htdocs...')
+#2 {main}
+
+

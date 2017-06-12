@@ -1,0 +1,48 @@
+2016-02-21 01:27:21 Notice: Notice (8): Undefined variable: reftable in [C:\xampp\htdocs\soundcars\config\Migrations\20160220040943_create_ventas_table.php, line 38]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+CreateVentasTable::change() - ROOT\config\Migrations\20160220040943_create_ventas_table.php, line 38
+Phinx\Migration\Manager\Environment::executeMigration() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php, line 114
+Phinx\Migration\Manager::executeMigration() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 308
+Phinx\Migration\Manager::migrate() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 284
+Phinx\Console\Command\Migrate::execute() - ROOT\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php, line 113
+Migrations\Command\Migrate::parentExecute() - ROOT\vendor\cakephp\migrations\src\ConfigurationTrait.php, line 177
+Migrations\Command\Migrate::execute() - ROOT\vendor\cakephp\migrations\src\Command\Migrate.php, line 58
+Symfony\Component\Console\Command\Command::run() - ROOT\vendor\symfony\console\Command\Command.php, line 256
+Symfony\Component\Console\Application::doRunCommand() - ROOT\vendor\symfony\console\Application.php, line 791
+Symfony\Component\Console\Application::doRun() - ROOT\vendor\symfony\console\Application.php, line 186
+Symfony\Component\Console\Application::run() - ROOT\vendor\symfony\console\Application.php, line 117
+Migrations\Shell\MigrationsShell::main() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 97
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 456
+Migrations\Shell\MigrationsShell::runCommand() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 110
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 217
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2016-02-21 04:57:45 Notice: Notice (8): Undefined variable: reftable in [C:\xampp\htdocs\soundcars\config\Migrations\20160220040943_create_ventas_table.php, line 38]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+CreateVentasTable::change() - ROOT\config\Migrations\20160220040943_create_ventas_table.php, line 38
+Phinx\Migration\Manager\Environment::executeMigration() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php, line 114
+Phinx\Migration\Manager::executeMigration() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 308
+Phinx\Migration\Manager::migrate() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 284
+Phinx\Console\Command\Migrate::execute() - ROOT\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php, line 113
+Migrations\Command\Migrate::parentExecute() - ROOT\vendor\cakephp\migrations\src\ConfigurationTrait.php, line 177
+Migrations\Command\Migrate::execute() - ROOT\vendor\cakephp\migrations\src\Command\Migrate.php, line 58
+Symfony\Component\Console\Command\Command::run() - ROOT\vendor\symfony\console\Command\Command.php, line 256
+Symfony\Component\Console\Application::doRunCommand() - ROOT\vendor\symfony\console\Application.php, line 791
+Symfony\Component\Console\Application::doRun() - ROOT\vendor\symfony\console\Application.php, line 186
+Symfony\Component\Console\Application::run() - ROOT\vendor\symfony\console\Application.php, line 117
+Migrations\Shell\MigrationsShell::main() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 97
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 456
+Migrations\Shell\MigrationsShell::runCommand() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 110
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 217
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+

@@ -1,0 +1,89 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*---------------------------------------------------*/
+#bg{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    
+    
+    
+}
+
+/*----------------- clases -------------------------------------*/
+
+
+/*-------------------------------menu tipo windows------------------------------*/
+#principal{
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+	height: 550px;
+}
+
+.cabecera{
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background-color: #0000ff;
+	padding: 10px;
+}
+
+.mbtg-p{
+	width: 29%;
+	height: 150px;
+	background-color: #e60000;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.mbtg-m{
+	width: 40%;
+	height: 150px;
+	background-color: #e60000;
+	display: inline-block;
+	margin-top: 5px;
+	
+}
+
+.mbtg-g{
+	width: 49%;
+	height: 150px;
+	background-color: #e60000;
+	display: inline-block;
+	margin-top: 5px;
+
+}
+
+.div-ventas{
+    background-color: aliceblue;
+    width: 70%;
+    margin-left: 400px;
+}
+
+.mbtg-m a img{
+	width: 100%;
+	margin: 0px;
+	height: 150px;
+	display: inline-block;
+	float: none;
+}
+.mbtg-g a img{
+	width: 100%;
+	margin: 0px;
+	height: 150px;
+	display: inline-block;
+	float: none;
+}
+.mbtg-p a img{
+	width: 100%;
+	margin: 0px;
+	height: 150px;
+	display: inline-block;
+	float: none;
+}

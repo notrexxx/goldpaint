@@ -1,6 +1,11 @@
 
+
+
+
     <h3><?= __('Productos') ?></h3>
-    <table class="table table-hover" cellpadding="0" cellspacing="0">
+
+    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+   
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
@@ -36,12 +41,15 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+   
 </div>
+
+<script>
+
+    $('#b').select2();
+
+  $(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+ </script>

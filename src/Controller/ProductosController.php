@@ -30,10 +30,18 @@ class ProductosController extends AppController
             'contain' => ['Materials']
         ];
         $productos = $this->paginate($this->Productos);
+   
 
-        $this->set(compact('productos'));
-        $this->set('_serialize', ['productos']);
+
+  $producto = $this->Productos->find('list', ['limit' => 200,'keyField' => 'id',
+        'valueField' =>'full'])->toArray();
        
+       
+        $this->set(compact('productos', 'producto'));
+        $this->set('_serialize', ['productos', 'producto']);
+       
+
+
     }
 
     /**

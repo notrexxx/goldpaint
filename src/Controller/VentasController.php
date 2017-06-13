@@ -24,7 +24,22 @@ class VentasController extends AppController
      * @return \Cake\Network\Response|null
      */
     public function index()
-    {
+
+
+ {   
+          
+      
+        
+       
+       
+       
+
+
+    
+
+
+
+    
         $this->paginate = [
             'contain' => ['Productos']
         ];
@@ -38,8 +53,9 @@ class VentasController extends AppController
         $this->set('_serialize', ['ventas','total']);
         $productos = TableRegistry::get('Productos');
                          
-       
-        
+       //Modal inventario
+
+   
         //Ventatotale
         
         $ventatotaleTable = TableRegistry::get('Ventatotales');
@@ -157,7 +173,7 @@ class VentasController extends AppController
         'valueField' =>'full'])->toArray();
        
        
-        $this->set(compact('venta', 'producto'));
+        $this->set(compact('venta', 'producto','producto2'));
         $this->set('_serialize', ['venta']);
 }
 

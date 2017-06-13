@@ -33,6 +33,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('bootstrap.min.js'); ?>
   
     <?= $this->Html->script('select2.min.js'); ?>
+    <?= $this->Html->script('jquery.dataTables.min.js'); ?>
+    <?= $this->Html->script('dataTables.bootstrap.min.js'); ?>
     <?= $this->Html->css('bootstrap.min.css'); ?>
 
  

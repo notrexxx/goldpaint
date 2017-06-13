@@ -3,7 +3,6 @@
    <h3><?= __('Buscar producto') ?></h3>
             
              <?php
-  
   echo $this->Form->input('buscador',['label'=>'','id'=>'b','placeholder'=>'Buscar producto','options'=>$producto]);
   ?> 
 <br>
@@ -92,18 +91,9 @@
         <?php
             echo $this->Form->input('nombre');
             echo $this->Form->input('cedula');
-            echo $this->Form->input('edad',['options'=>
-                ['18 a 21'=>'18 a 21',
-                '22 a 25'=>'22 a 25',
-                '26 a 30'=>'26 a 35',
-                '36 a 40'=>'41 a 45',
-                '46 a 50'=>'46 a 50',
-                '51 en adelante'=>'51 en adelante'
-                ]
-                ]);
-            echo $this->Form->input('sexo',['options'=>['M','F']]);
+         
             echo $this->Form->input('direccion');
-            echo $this->Form->input('email');
+        
             echo $this->Form->input('numero',['label'=>'numero de telefono']);
             echo $this->Form->input('otronumero',['label'=>'numero de telefono opcional']);
            
@@ -118,6 +108,78 @@
     </div>
        
 
+
+
+
+
+       
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">VER INVENTARIO
+</button>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">INVENTARIO</h4>
+      </div>
+      <div class="modal-body">
+          
+     <h3><?= __('Productos') ?></h3>
+
+    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+   
+        <thead>
+            <tr>
+                <th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('numero_serie') ?></th>
+                <th><?= $this->Paginator->sort('codigo y modelo') ?></th>
+                <th><?= $this->Paginator->sort('existencia') ?></th>
+                <th><?= $this->Paginator->sort('precio') ?></th>
+                <th class="actions"><?= __('Actions') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($productos2 as $producto): ?>
+            <tr>
+                <td><?= $this->Number->format($producto->id) ?></td>
+                <td><?= h($producto->numero_serie) ?></td>
+                <td><?= $producto->has('material') ? $this->Html->link($producto->material->full , ['controller' => 'Materials', 'action' => 'view', $producto->material->id]) : '' 
+                ?></td>
+               <td><?php if ($producto->minimo>=$producto->existencia){
+                $ex=strval($producto->existencia);
+                echo  $this->Form->button($ex,array('class' => 'btn btn-danger')); }else{
+                       echo  h($producto->existencia);
+                    }?>
+                </td>
+                
+               
+                <td><?= $this->Number->format($producto->precio) ?></td>
+                <td class="actions">
+                    <?php echo $this->Html->link(__('<i class="fa fa-eye"></i>'), array('action' => 'view', $producto->id), array('class' => 'btn btn-sm btn-success', 'escape' => false, 'button title' => 'VER')); ?>
+                    <?php echo $this->Html->link(__('<i class="fa fa-pencil"></i>'), array('action' => 'edit', $producto->id), array('class' => 'btn btn-sm btn-primary', 'escape' => false, 'button title' => 'EDITAR')); ?>
+                   <?php echo $this->Form->postLink(__('<i class="fa fa-trash"></i>'), array('action' => 'delete', $producto->id), array('class' => 'btn btn-sm btn-danger', 'escape' => false, 'button title' => 'ELIMINAR'), array('confirm' => __('Are you sure you want to delete # {0}?', $producto->id))); ?>                  
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+   
+</div>
+
+
+
+      </div> 
+        </div> 
+      </div> 
+  
+    </div>
+       
   
      </div>
     </div> 
@@ -264,6 +326,12 @@
   
 
 <script>
+ $(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+
   $(document).ready(function () {
       
       

@@ -149,8 +149,7 @@
             <tr>
                 <td><?= $this->Number->format($producto->id) ?></td>
                 <td><?= h($producto->numero_serie) ?></td>
-                <td><?= $producto->has('material') ? $this->Html->link($producto->material->full , ['controller' => 'Materials', 'action' => 'view', $producto->material->id]) : '' 
-                ?></td>
+                <td><?=  h($producto->full)?></td>
                <td><?php if ($producto->minimo>=$producto->existencia){
                 $ex=strval($producto->existencia);
                 echo  $this->Form->button($ex,array('class' => 'btn btn-danger')); }else{

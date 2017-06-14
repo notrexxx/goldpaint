@@ -36,10 +36,6 @@ class VentasTable extends Table
             'foreignKey' => 'producto_id',
             'joinType' => 'INNER'
         ]);
-
-
-
-        
     }
 
     /**

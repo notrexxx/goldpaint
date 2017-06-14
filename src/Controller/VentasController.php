@@ -26,18 +26,7 @@ class VentasController extends AppController
     public function index()
 
 
- {   
-          
-      
-        
-       
-       
-       
-
-
-    
-
-
+ {  
 
     
         $this->paginate = [
@@ -54,8 +43,9 @@ class VentasController extends AppController
         $productos = TableRegistry::get('Productos');
                          
        //Modal inventario
+  
 
-   
+     
         //Ventatotale
         
         $ventatotaleTable = TableRegistry::get('Ventatotales');
@@ -73,7 +63,7 @@ class VentasController extends AppController
       
 
         $tengo=count($tesperas);
-        $this->set(compact('ventatotale', 'clientes','cliente','bancos','banco','tengo'));
+        $this->set(compact('ventatotale', 'clientes','cliente','bancos','banco','tengo','productos2'));
         $this->set('_serialize', ['ventatotale']);
         $real=0;
         $this->set('real', $real);
@@ -172,8 +162,10 @@ class VentasController extends AppController
         $producto = $this->Ventas->Productos->find('list', ['limit' => 200,'keyField' => 'id',
         'valueField' =>'full'])->toArray();
        
+       $productos2 = $this->Ventas->Productos->find('all', compact('caracteristicas', 'existencia', 'precio', 'minimo', 'numero_serie', 'full'))->toArray();
+
        
-        $this->set(compact('venta', 'producto','producto2'));
+        $this->set(compact('venta', 'producto' ,'productos2'));
         $this->set('_serialize', ['venta']);
 }
 

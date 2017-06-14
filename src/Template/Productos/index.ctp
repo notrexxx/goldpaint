@@ -46,8 +46,6 @@
 
 <script>
 
-    $('#b').select2();
-
   $(document).ready(function() {
     $('#example').DataTable();
 } );

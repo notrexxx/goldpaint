@@ -36985,3 +36985,564 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
 
 
 
+2017-06-13 04:09:31 Error: [InvalidArgumentException] Ventas is not associated with Materials in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php on line 496
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(320): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VentasTable), 'Materials', Array, Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(450): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VentasTable))
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(421): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VentasTable))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1038): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VentasTable), true)
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(990): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(258): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1011): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(960): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(190): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(717): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VentasTable), Array)
+#14 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(46): Cake\Controller\Controller->paginate(Object(App\Model\Table\VentasTable))
+#15 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#16 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#18 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 {main}
+
+
+2017-06-13 04:09:43 Error: [InvalidArgumentException] Ventas is not associated with Materials in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php on line 496
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(320): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VentasTable), 'Materials', Array, Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(450): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VentasTable))
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(421): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VentasTable))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1038): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VentasTable), true)
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(990): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(258): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1011): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(960): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(190): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(717): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VentasTable), Array)
+#14 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(46): Cake\Controller\Controller->paginate(Object(App\Model\Table\VentasTable))
+#15 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#16 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#18 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 {main}
+
+
+2017-06-13 04:10:08 Error: [InvalidArgumentException] Ventas is not associated with Materials in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php on line 496
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(320): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VentasTable), 'Materials', Array, Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(450): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VentasTable))
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(421): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VentasTable))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1038): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VentasTable), true)
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(990): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(258): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1011): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(960): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(190): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(717): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VentasTable), Array)
+#14 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(46): Cake\Controller\Controller->paginate(Object(App\Model\Table\VentasTable))
+#15 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#16 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#18 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 {main}
+
+
+2017-06-13 04:10:22 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(57): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 04:11:25 Error: [InvalidArgumentException] Ventas is not associated with Materials in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php on line 496
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(320): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VentasTable), 'Materials', Array, Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(450): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VentasTable))
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(421): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VentasTable))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1038): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VentasTable), true)
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(990): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(258): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1011): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(960): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(190): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(717): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VentasTable), Array)
+#14 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(46): Cake\Controller\Controller->paginate(Object(App\Model\Table\VentasTable))
+#15 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#16 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#18 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 {main}
+
+
+2017-06-13 04:11:37 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(57): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 04:13:14 Error: [InvalidArgumentException] Ventas is not associated with Materials in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php on line 496
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(320): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\VentasTable), 'Materials', Array, Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(450): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\VentasTable))
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(421): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\VentasTable))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1038): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\VentasTable), true)
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(990): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(258): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(1011): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Query.php(960): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(190): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(717): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VentasTable), Array)
+#14 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(35): Cake\Controller\Controller->paginate(Object(App\Model\Table\VentasTable))
+#15 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#16 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#18 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 {main}
+
+
+2017-06-13 04:13:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 04:18:37 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 04:25:27 Warning: Headers already sent in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Error\Debugger.php:822
+2017-06-13 04:25:27 Error: [Error] Call to a member function find() on boolean in C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php on line 54
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 {main}
+
+
+2017-06-13 04:25:44 Warning: Headers already sent in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Error\Debugger.php:822
+2017-06-13 04:25:44 Error: [Error] Call to a member function find() on boolean in C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php on line 54
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 {main}
+
+
+2017-06-13 04:27:45 Warning: Headers already sent in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Error\Debugger.php:822
+2017-06-13 04:27:45 Error: [Error] Call to a member function find() on boolean in C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php on line 54
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 {main}
+
+
+2017-06-13 04:28:13 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(48): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 04:30:23 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(47): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 04:35:11 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:07:03 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:09:56 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(166): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:11:52 Error: [BadMethodCallException] Unknown method "paginate" in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Table.php on line 2293
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Association.php(1361): Cake\ORM\Table->__call('paginate', Array)
+#1 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(166): Cake\ORM\Association->__call('paginate', Array)
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 {main}
+
+
+2017-06-13 14:12:17 Warning: Headers already sent in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Error\Debugger.php:822
+2017-06-13 14:12:17 Error: [BadMethodCallException] Unknown method "paginate" in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Table.php on line 2293
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Association.php(1361): Cake\ORM\Table->__call('paginate', Array)
+#1 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(166): Cake\ORM\Association->__call('paginate', Array)
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 {main}
+
+
+2017-06-13 14:19:13 Error: [BadMethodCallException] Unknown method "paginate" in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Table.php on line 2293
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\ORM\Table->__call('paginate', Array)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:19:26 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:19:44 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:26:42 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:33:09 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:33:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:34:22 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:34:34 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:38:38 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:39:01 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(50): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 14:39:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/?redirect=%2Fventas
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:58:22 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/clientes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 14:59:37 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/clientes
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(166): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 15:00:05 Error: [RuntimeException] Unable to locate an object compatible with paginate. in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php on line 713
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/clientes
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(166): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->index()
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 {main}
+
+
+2017-06-13 15:00:22 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\goldpaint\src\Template\Ventas\index.ctp, line 148]
+Request URL: /ventas
+Referer URL: http://localhost/goldpaint/clientes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Ventas\index.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1011
+Cake\View\View::_render() - CORE\src\View\View.php, line 972
+Cake\View\View::render() - CORE\src\View\View.php, line 596
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 60
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2017-06-13 15:39:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "ventas" in C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php on line 417
+Request URL: /ventas/view/1
+Referer URL: http://localhost/goldpaint/ventas?sort=codigo+y+modelo&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\ORM\Table.php(1432): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\goldpaint\src\Controller\VentasController.php(182): Cake\ORM\Table->get(Array, Array)
+#2 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\VentasController->view('1')
+#3 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasController))
+#5 C:\xampp\htdocs\goldpaint\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(60): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\goldpaint\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 {main}
+
+
